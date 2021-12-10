@@ -4,6 +4,9 @@ dic.addWord("app");
 dic.addWord("apple");
 dic.addWord("ayman");
 dic.addWord("boom");
+dic.addWord("iphone");
+dic.addWord("moon");
+dic.addWord("car");
 
 // getting all required elements
 const searchWrapper = document.querySelector(".search-input");

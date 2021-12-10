@@ -12,7 +12,7 @@ https://aymangosh.github.io/Google-Search-Autocomplete-Trie/
 
 ## 🚀 1. Overview
 
-![](MobilePag.png)
+![](ScreenShot.png)
 
 ## 🚀 INTRO 
 There are a lot of different weather apps on the market. Most of them get their information from some API and display it in a way that looks nice on your phone or desktop.

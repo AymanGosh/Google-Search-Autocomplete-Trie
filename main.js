@@ -3,6 +3,6 @@ dic = new PrefixTree("Root");
 dic.addWord("abc");
 dic.addWord("abd");
 
-dic.logAllWords();
+// dic.logAllWords();
 
 console.log(dic);

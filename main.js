@@ -1,8 +1,10 @@
 dic = new PrefixTree("Root");
 
-dic.addWord("abc");
-dic.addWord("abd");
+dic.addWord("app");
+dic.addWord("apple");
+dic.addWord("ayman");
+dic.addWord("boom");
 
 // dic.logAllWords();
 
-console.log(dic);
+console.log(dic.predictWord("ap"));

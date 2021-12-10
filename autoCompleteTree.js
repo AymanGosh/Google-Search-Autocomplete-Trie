@@ -18,4 +18,35 @@ class PrefixTree extends PrefixTreeNode {
   addWord(string) {
     this.addWordHelper(this, string);
   }
+  /**************************************************/
+
+  predictWord(string) {
+    let allWords = [];
+    /**************************************************/
+    const getRemainingTree = function (string, tree) {
+      let node = tree;
+      while (string) {
+        node = node.children[string[0]];
+        string = string.substr(1);
+      }
+      return node;
+    };
+    /**************************************************/
+    const allWordsHelper = function (stringSoFar, tree) {
+      for (let k in tree.children) {
+        const child = tree.children[k];
+        let newString = stringSoFar + child.value;
+        if (child.endWord) {
+          allWords.push(newString);
+        }
+        allWordsHelper(newString, child);
+      }
+    };
+    /**************************************************/
+    let remainingTree = getRemainingTree(string, this);
+    if (remainingTree) {
+      allWordsHelper(string, remainingTree);
+    }
+    return allWords;
+  }
 }
